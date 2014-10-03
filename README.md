@@ -1,7 +1,7 @@
 jssecretshare
 =============
 
-jssecretshare is a simple proof-of-concept Javascript implementation of [Shamir's Secret Sharing][http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing] scheme. It was specifically designed to interact well with the implementation of Shamir's Secret Sharing scheme found in [VIFF][http://viff.dk].
+jssecretshare is a simple proof-of-concept Javascript implementation of [Shamir's Secret Sharing](http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) scheme. It was specifically designed to interact well with the implementation of Shamir's Secret Sharing scheme found in [VIFF](http://viff.dk).
 
 Do keep in mind this is proof-of-concept code. Also, doing cryptography in Javascript is typically considered to be a Bad Idea (tm), see also the discussion ["Javascript Cryptography Considered Harmful"](http://www.matasano.com/articles/javascript-cryptography/).
 
