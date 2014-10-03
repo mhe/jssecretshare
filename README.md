@@ -11,6 +11,18 @@ Dependencies
 jssecretshare has a single dependency: [jsbn](http://www-cs-students.stanford.edu/~tjw/jsbn/).
 You will need at least jsbn.js, jsbn2.js, prng4.js, and rng.js
 
+Usage
+-----
+```javascript
+// Share the secret 42 into 8 shares such that more than 2 
+// shares are need to recover the secret.
+shares = secretshare.share(42, "9223372045444710599", 2, 8);
+// Take three shares to recover the secret
+recoveredSecret = secretshare.recombine([shares[0],shares[6], shares[3]],"9223372045444710599");
+// Convert BigInteger to Javascript value
+secretValue = recoveredSecret.intValue(); // should be 42
+```
+
 Acknowledgements
 ----------------
 
